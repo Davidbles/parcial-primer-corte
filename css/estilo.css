@@ -1,0 +1,275 @@
+/* Patrones globales del CSS */ 
+/* Títulos, Enlaces y Botones y Subtítulos, Párrafos, Formularios y otras etiquetas de textos */ 
+h1, h2, h3, h4, h5, p, a, button, form, input, select, textarea, option, table, tr, th, td, span, div, strong, em { font-family: 'Roboto Condensed', sans-serif; }
+
+/*subtitulos h6 */
+h6 {font-family: 'Permanent Marker', cursive;}
+/* Asignar display: block; a todas las cajas de estructura */ 
+header, main, footer, aside, section, article, figure, nav, figcaption, div { display: block; }
+
+/* Anular margen por defecto de body */ 
+body { margin: 0 !important; }
+
+/* quitar margen a etiquetas que lo traigan */ 
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
+
+/* Estilo propio */
+
+/* Componente Menú Móviles */
+/*ASIDE*/
+
+aside#menu-movil { width: 290px; display: none; height: 100%; margin: 0; float: none; position: fixed; top: 0; right: -290px; z-index: 99999; background: #75cc12;}
+
+aside#menu-movil #abrir { width: 40px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 25px; left: -40px; z-index: 99996; background: #75cc12; color: #fff; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; border-radius: 5px 0 0 5px;  }
+aside#menu-movil #abrir:hover { background: #222222; transition: all 0.3s ease-in;}
+
+
+aside#menu-movil #cerrar {width: 40px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 25px; left: -40px; z-index: 99996; background: #75cc12; color: #fff; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; border-radius: 5px 0 0 5px;}
+aside#menu-movil #cerrar:hover { background: #222222 ; transition: all 0.3s ease-in;}
+
+
+aside#menu-movil nav { width: 80%; height: auto; display: block; margin: 40px auto 0 auto; float: none; position: relative; }
+aside#menu-movil nav a { width: 100%; height: auto; display: block; margin: 0 auto 20px; float: none; position: relative; color: #fff; text-decoration: none; transition: all 0.3s ease-in; text-align: center; font-family: 'Roboto Condensed', sans-serif; text-transform: uppercase; font-weight: 600; font-size: 0.95em; text-align: center; letter-spacing: 0.02em; }
+aside#menu-movil nav a:hover { color: #222222; transition: all 0.3s ease-in;}
+aside#menu-movil nav a:last-child { height: auto; background: #fff; transition: all 0.3s ease-in; color: #75cc12; padding: 12px 24px 12px 24px; border-radius: 50px; width: 96px; top: 30px; }
+aside#menu-movil nav a:last-child:hover { background: #222222; transition: all 0.3s ease-in; color: #fff; }
+
+
+
+/* Componente: HEADER */
+header { width: 100%; height: 110px; position: fixed; top: 0; left: 0; z-index: 99999; margin: 0; float: none; background: #fff; }
+
+header article {white: 1100px; height: 100px;position: relative; margin: 0 auto; float: none;}
+header article a {  width: 189px; height: 80px; display: block; position: relative; margin: 0; float: left; top: 10px; }
+header article a img { width: 150px; height: 53px; display: block; position: relative; margin: 31px 100px 0px; float: none;}
+
+header article nav { width: 700px; height: 50px; display: block; position: relative; margin: 46px 0 0; float: right; }
+header article nav a { width: auto; height: auto; display: block; position: relative; margin: 0 15px; float: left; color:black; text-decoration: none; font-weight: 600; font-size: 1em; line-height: 1em; padding: 17px 0 8px; border-bottom: solid 2px #fff; top: 0; transition: all 0.3s ease-in; }
+header article nav a:nth-child(5) { margin: 0 0 0 38px; color: #fff; background: #75cc12; padding: 10px 21px 10px 21px; border-radius: 50px; border-bottom: none;}
+
+header article nav a:hover { border-bottom: solid 2px #89B657; transition: all 0.3s ease-in; color: #89B657;}
+header article nav a:hover:nth-child(5) { background: #222222; transition: all 0.3s ease-in; color: #fff; padding: 10px 21px 10px 21px; border-bottom: none;}
+
+
+
+/* Componente: Contenedor MAIN */
+main {width: 100%; height: auto; position: relative; margin: 70px auto 0 auto; float: none;   }
+
+/* Componente: Sección "HAPPY HOUR" */
+main section#happy-hour {   width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: url(../img/fondo-puntos.png) no-repeat top center #f0f0f0; }
+main section#happy-hour div#ancla-happy-hour {  width: 100%; height: 1px; position: absolute; margin: 0 auto; float: none; top: -100px; left: 0;}
+
+main section#happy-hour article {width: 1100px; height: 826px; position: relative; margin: 0 auto; float: none; padding: 15px 0 0  }
+main section#happy-hour article h3 {font-size: 1.5em; color: #18e022; font-weight: 600; line-height: 1em; margin: 0px; padding: 84px 0 14px; letter-spacing: -0.015em; text-align: center; }
+main section#happy-hour article h2 {text-align: center; color: #29361a; font-size: 90px; font-weight: 900; line-height: 89px; ruby-span:color: #89b758; padding: 0 0px 30px;}
+main section#happy-hour article h2 span {color: #18e022; }
+
+
+main section#happy-hour article a { width: auto; height: auto; display: block; position: relative; margin: 24px 0px 0px 500px; float: left; color: #fff; background: #25960f; text-decoration: none; font-weight: 600; font-size: 1em; line-height: 1em; padding: 14px 25px; border-radius: 25px; transition: all 0.3s ease-in;}
+main section#happy-hour article a:hover { background: #243024e1;; padding: 14px 30px; transition: all 0.3s ease-in; }
+
+
+
+
+main section#happy-hour article img {  width: 700px; height: auto; position: relative; margin: 0px 0px 0px 144px; float: none; display: block; z-index: 99997; left: 84px;}
+
+/* Componente: Sección "OUR MENU" */
+
+main section#our-menu { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: url(../img/fondo-textura.png) no-repeat top center; color: #f0f0f0; background-size: cover; }
+main section#our-menu div#ancla-our-menu {width: 1100px; height: 130px; position: relative; margin: auto 78px; float: none; padding: 100px 0 0;}
+
+main section#our-menu article { width: 1100px; height: auto; position: relative; margin: 0 auto 90px; float: none;}
+main section#our-menu article h6 { font-size: 1.5em; text-align: center; padding: 0 0 10px; color: #28c128; font-weight: 500;}
+main section#our-menu article h2 {font-size: 4.9em; text-align: center; padding: 0 0 50px; color: black; font-weight: bold;}
+main section#our-menu article div#fila-platos { width: 100%; height:420px; position: relative; margin: o auto; float: none;}
+
+main section#our-menu article div#fila-platos figure {width: 336px; height: 378px; float: left; position: relative; border-radius: 10px; overflow: hidden;}
+
+main section#our-menu article div#fila-platos figure:nth-child(1) { margin: 16px 30px 0 0; }
+main section#our-menu article div#fila-platos figure:nth-child(2) { margin: 0 30px 0 0; width: 366px; height: 411px; }
+main section#our-menu article div#fila-platos figure:nth-child(3) { margin: 16px 0 0 0; }
+
+main section#our-menu article div#fila-platos figure img {width: 100%; height: auto; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 1; display: block; transition: all 0.3s ease-in; }
+main section#our-menu article div#fila-platos figure h4 { width: 70%; height: auto; margin: 0; float: none; position: absolute; bottom: 13%; left: 15%; z-index: 2; display: block; background: rgba(255, 255, 255, 80%); color: #111; text-align: center; border-radius: 10px; padding: 20px 0; font-size: 1.8em; transition: all 0.3s ease-in; }
+
+main section#our-menu article div#fila-platos figure:hover img { filter: saturate(1.3); transition: all 0.3s ease-in }
+main section#our-menu article div#fila-platos figure:hover h4 { background: rgba(0, 0, 0, 80%); color: #fff; transition: all 0.3s ease-in }
+
+/* Componente: Sección "FREE PIZZA" */
+main section#free-pizza { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: url(../img/promocion-pizza.jpg) no-repeat top center fixed; background-size: cover; }
+
+main section#free-pizza div#ancla-free-pizza { width: 100%; height: 1px; position: absolute; margin: 0 auto; float: none; top: -100px; left: 0; }
+
+main section#free-pizza article {width: 1100px; height: 500px; position: relative; margin: 0 auto; float: none; }
+main section#free-pizza article h5 { font-size: 1.5em; color: #ffffff; font-weight: 400; line-height: 1em; margin: 0px 0px 0px 0; padding: 120px 0 0px; letter-spacing: -0.015em; text-transform: uppercase;}
+
+main section#free-pizza article h5 span { font-size: 4em;
+    font-weight: bold;}
+ 
+main section#free-pizza article h3 { margin: 7px 0 31px; text-transform: uppercase; color: #18e022; font-size: 90px; font-weight: 900; line-height: 89px; padding: 0px 18px 35px 0;
+ }
+
+main section#free-pizza article a {margin: 0; color: #fff; background: #18e022; padding: 10px 36px 10px 36px; border-radius: 50px; border-bottom: none; float: left; text-decoration: none; transition: all 0.3s ease-in;}
+main section#free-pizza article a :hover {border-radius: 50px; background: #222222; transition: all 0.3s ease-in;   }
+
+
+
+
+
+/* Componente: Footer */
+footer { width: 100%; height: auto; position: relative; margin: 0; float: none; padding: 70px 0 70px; }
+
+footer div#ancla-contacto { width: 100%; height: 1px; position: absolute; margin: 0 auto; float: none; top: -100px; left: 0; }
+
+/*Superior Footer*/
+
+footer article { width: 1100px; height: 400px; position: relative; margin: 0 auto; float: none; }
+footer article div#superior-footer { width: 502px; height: auto; position: relative; margin: 0 auto; float: none; padding: 100px 0 70px 0;}
+footer article div#superior-footer img { width: 120px; height: auto; position: relative; margin: 0 auto; float: none; display: block; }
+footer article div#superior-footer p { margin: 0 auto; float: none; display: block; font-size: 0.9em; color: rgb(2, 44, 15); letter-spacing: 0.02em; font-weight: 500; line-height: 1.9em; text-align: center;}
+
+
+footer article hr { height: 1px; width: 100%; margin: 0; float: none; position: relative; color: #5a4b15;  }
+
+
+/*Inferior Footer*/
+
+footer article div#inferior-footer { width: 180px; height: auto; margin: 0px 450px 0px; float: right; position: relative; padding: 30px 0px 0px;}
+footer article div#inferior-footer nav { width: 178px; height: auto; margin: 0; float: none; position: relative;}
+footer article div#inferior-footer nav a { width: 37px; height: 37px; float: left; position: relative; color: #fff; border-radius: 50%; text-align: center; margin: 0 7px 0 0; transition: all 0.3s ease-in; }
+footer article div#inferior-footer nav a i { text-align: center; font-size: 0.9em; padding: 12px 0 0 0;}
+
+footer article div#inferior-footer nav a:nth-child(1) { background: #2a53c7;}
+footer article div#inferior-footer nav a:nth-child(2) { background:#489ef7;}
+footer article div#inferior-footer nav a:nth-child(3) { background:#3d679c;}
+footer article div#inferior-footer nav a:nth-child(4) { background: #f71c1c;}
+
+
+footer article div#inferior-footer nav a:hover { background: #222222; color: #fff; transition: all 0.3s ease-in; }
+
+
+/* Zona de Media Queries para Responsive */
+
+/* Ajustes Tablets */
+@media only screen and (max-width: 1199px){
+    aside#menu-movil { display: block;}
+
+    header { width: 100%; height: 100px; position: fixed; left: 0; z-index: 99998; margin: 0; float: none; top: 0}
+
+    header article { float: left; top: 10px; margin: 0 auto; display: block; width: 80%; padding: 0 0 0 95px; }
+    header article a {  margin: 0 auto; float: none; display: block; padding: 0; }
+    header article a img {  margin: 0 auto; float: none; display: block; padding: 14px 0; }
+
+    header article nav { display: none;}
+
+main section#our-menu article { width: 80%; }
+    
+main section#our-menu article div#fila-platos {  height: auto; }
+    
+    
+main section#our-menu article div#fila-platos figure {width: 270px; float: none; }
+
+main section#our-menu article div#fila-platos figure:nth-child(1) { margin: 0 auto 30px; }
+main section#our-menu article div#fila-platos figure:nth-child(2) { margin: 0 auto 30px; }
+main section#our-menu article div#fila-platos figure:nth-child(3) { margin: 0 auto; }
+
+main section#our-menu article div#fila-platos figure img { width: auto; height: 100%; }
+
+
+
+    
+}
+
+/* Ajustes para Móviles */
+/*Ajustes para Tablets*/
+
+@media only screen and (max-width: 1199px){
+
+    aside#menu-movil { display: block;}
+
+    header { width: 100%; height: 100px; position: fixed; left: 0; z-index: 99998; margin: 0; float: none; top: 0}
+
+    header article { float: left; top: 10px; margin: 0 auto; display: block; width: 80%; padding: 0 0 0 95px; }
+    header article a {  margin: 0 auto; float: none; display: block; padding: 0; }
+    header article a img {  margin: 0 auto; float: none; display: block; padding: 14px 0; }
+
+    header article nav { display: none;}
+
+    /*main*/
+
+    /*Section Happy Hour*/
+
+    main section#happy-hour article { width: 100%; height: auto; float: none; margin: 0 auto;}
+    
+    main section#happy-hour article a {  display: block; height: auto; width: 21%; margin: auto 183px 0px }
+
+    main section#happy-hour article img {width: 70%; height: auto; margin: auto 0px 0;}
+
+    /* Section Our Menu*/
+
+    main section#our-menu article { width: 80%; height: auto; padding: 100px 0; } 
+
+    main section#our-menu article h1 { margin: 0 0 70px 0; }
+
+    main section#our-menu article div#fila-platos {  width: 80%;  height: auto;  margin: 0 auto;  float: none;}
+    
+    main section#our-menu article div#fila-platos figure:nth-child(1) { margin: 0 auto 30px; float: none;}
+    main section#our-menu article div#fila-platos figure:nth-child(2) { margin: 0 auto 30px; float: none;}
+    main section#our-menu article div#fila-platos figure:nth-child(3) { margin: 0 auto 30px; float: none;}
+
+    /*Section Free Pizza*/
+
+    main section#free-pizza article { width: 80%; }
+
+  
+    main section#free-pizza article div#free-pizza-promo { height: auto; float: none; margin: 0 auto; padding: 106px 0; }
+    main section#free-pizza article div#free-pizza-promo { width: 396px; height: auto; float: none; position: relative; margin: 0 auto; padding: 57px 0; } 
+    main section#free-pizza article div#free-pizza-promo h5 { float: none; margin: 0 auto; height: 84px; width: auto; text-align: center; padding: 0 0 13px;}
+    main section#free-pizza article div#free-pizza-promo h3 { float: none;  margin: 0 auto; padding: 0 0 32px; text-align: center; line-height: 1em;}
+    main section#free-pizza article div#free-pizza-promo a {  margin: 6px auto 0; padding: 12px 36px 12px 36px; float: none; text-align: center; display: block; height: 22px; width: 100px}
+
+
+    /*Footer*/
+
+    footer article { width: 80%; height: auto; }
+    footer article div#superior-footer { width: 100%; height: auto; }
+
+    footer article div#superior-footer p { line-height: 1.5em; padding: 0 39px ; }
+  
+    footer article div#inferior-footer { margin: 0 auto; float: none;}
+
+
+
+
+
+}
+   
+   
+   
+@media only screen and (max-width: 599px){ 
+
+  header article { padding: 0 0 0 48px }
+
+
+  main section#our-menu article div#fila-platos figure { width: 283px; height: 317px;} 
+  main section#our-menu article div#fila-platos figure:nth-child(2) { width: 309px; height: 348px;}
+
+
+
+  main section#free-pizza article div#free-pizza-promo {  width: ; height: auto;  }
+
+ }
+
+ /*Ajustes para móviles*/
+
+ @media only screen and (max-width: 499px){ 
+
+    header article a { margin: 0; float: left;}
+
+    header article { float: left; top: 10px; margin: 0 auto; display: block; width: 80%; padding: 0 0 0 38px;}
+
+  
+
+  }
+
+@media only screen and (max-width: 399px){  }
